@@ -1,0 +1,741 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11C20983CEB0017013EB81B5 /* libPods-WXLC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBDBFCEEDEDD76C9780D928 /* libPods-WXLC.a */; };
+		D936C0911DEC1BAD009DFBF8 /* WXNetworkingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D936C0901DEC1BAD009DFBF8 /* WXNetworkingAPI.m */; };
+		D936C0941DEC2A55009DFBF8 /* StockInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D936C0921DEC2A55009DFBF8 /* StockInfoTableViewCell.swift */; };
+		D936C0951DEC2A55009DFBF8 /* StockInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D936C0931DEC2A55009DFBF8 /* StockInfoTableViewCell.xib */; };
+		D936C0981DEC2F2C009DFBF8 /* StockActionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D936C0961DEC2F2C009DFBF8 /* StockActionTableViewCell.swift */; };
+		D936C0991DEC2F2C009DFBF8 /* StockActionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D936C0971DEC2F2C009DFBF8 /* StockActionTableViewCell.xib */; };
+		D936C09C1DEEA6C4009DFBF8 /* UIAlertView+Block.m in Sources */ = {isa = PBXBuildFile; fileRef = D936C09B1DEEA6C4009DFBF8 /* UIAlertView+Block.m */; };
+		D95AF9D71DE2DDB100D6E93C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF9D61DE2DDB100D6E93C /* AppDelegate.swift */; };
+		D95AF9DC1DE2DDB100D6E93C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95AF9DA1DE2DDB100D6E93C /* Main.storyboard */; };
+		D95AF9DE1DE2DDB100D6E93C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D95AF9DD1DE2DDB100D6E93C /* Assets.xcassets */; };
+		D95AF9E11DE2DDB100D6E93C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D95AF9DF1DE2DDB100D6E93C /* LaunchScreen.storyboard */; };
+		D95AF9EC1DE2DDB100D6E93C /* WXLCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF9EB1DE2DDB100D6E93C /* WXLCTests.swift */; };
+		D95AF9F71DE2DDB100D6E93C /* WXLCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF9F61DE2DDB100D6E93C /* WXLCUITests.swift */; };
+		D95AFA051DE2E43300D6E93C /* WXHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */; };
+		D95AFA071DE2F2D100D6E93C /* icon_mine_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */; };
+		D95AFA0B1DE2F55400D6E93C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA0A1DE2F55400D6E93C /* Constant.swift */; };
+		D95AFA0E1DE5459800D6E93C /* WXAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */; };
+		D95AFA0F1DE5459800D6E93C /* WXAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA0D1DE5459800D6E93C /* WXAccountTableViewCell.xib */; };
+		D95AFA121DE54D3A00D6E93C /* AddAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA101DE54D3A00D6E93C /* AddAccountViewController.swift */; };
+		D95AFA131DE54D3A00D6E93C /* AddAccountViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA111DE54D3A00D6E93C /* AddAccountViewController.xib */; };
+		D95AFA161DE5533000D6E93C /* AccountDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA141DE5533000D6E93C /* AccountDetailViewController.swift */; };
+		D95AFA171DE5533000D6E93C /* AccountDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA151DE5533000D6E93C /* AccountDetailViewController.xib */; };
+		D95AFA1A1DE58D4A00D6E93C /* AddStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA181DE58D4A00D6E93C /* AddStockViewController.swift */; };
+		D95AFA1B1DE58D4A00D6E93C /* AddStockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA191DE58D4A00D6E93C /* AddStockViewController.xib */; };
+		D95AFA1E1DE593E800D6E93C /* AccountInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA1C1DE593E800D6E93C /* AccountInfoTableViewCell.swift */; };
+		D95AFA1F1DE593E800D6E93C /* AccountInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA1D1DE593E800D6E93C /* AccountInfoTableViewCell.xib */; };
+		D96283641DE7E13C005CFD0A /* WXStockManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96283631DE7E13C005CFD0A /* WXStockManager.swift */; };
+		D96283661DE7E186005CFD0A /* StockAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96283651DE7E186005CFD0A /* StockAccount.swift */; };
+		D96283681DE7E202005CFD0A /* StockDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D96283671DE7E202005CFD0A /* StockDetail.swift */; };
+		D97736311DEBE0E3003458AA /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D977362F1DEBE0E3003458AA /* StockDetailViewController.swift */; };
+		D97736321DEBE0E3003458AA /* StockDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D97736301DEBE0E3003458AA /* StockDetailViewController.xib */; };
+		D9D4125D1DE83EBC0008E77A /* StockListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9D4125B1DE83EBC0008E77A /* StockListTableViewCell.swift */; };
+		D9D4125E1DE83EBC0008E77A /* StockListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D9D4125C1DE83EBC0008E77A /* StockListTableViewCell.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D95AF9E81DE2DDB100D6E93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95AF9CB1DE2DDB100D6E93C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95AF9D21DE2DDB100D6E93C;
+			remoteInfo = WXLC;
+		};
+		D95AF9F31DE2DDB100D6E93C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D95AF9CB1DE2DDB100D6E93C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D95AF9D21DE2DDB100D6E93C;
+			remoteInfo = WXLC;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		447BD9C5FB9B33A67D3BCD1A /* Pods-WXLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXLC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXLC/Pods-WXLC.debug.xcconfig"; sourceTree = "<group>"; };
+		D31CD542D4F7E0D1C6801F80 /* Pods-WXLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXLC.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXLC/Pods-WXLC.release.xcconfig"; sourceTree = "<group>"; };
+		D9027CCB1DE6D1B30011E1E8 /* WXLC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXLC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D936C08E1DEC1BAD009DFBF8 /* NetworkingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingConstants.h; sourceTree = "<group>"; };
+		D936C08F1DEC1BAD009DFBF8 /* WXNetworkingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkingAPI.h; sourceTree = "<group>"; };
+		D936C0901DEC1BAD009DFBF8 /* WXNetworkingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkingAPI.m; sourceTree = "<group>"; };
+		D936C0921DEC2A55009DFBF8 /* StockInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockInfoTableViewCell.swift; sourceTree = "<group>"; };
+		D936C0931DEC2A55009DFBF8 /* StockInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockInfoTableViewCell.xib; sourceTree = "<group>"; };
+		D936C0961DEC2F2C009DFBF8 /* StockActionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockActionTableViewCell.swift; sourceTree = "<group>"; };
+		D936C0971DEC2F2C009DFBF8 /* StockActionTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockActionTableViewCell.xib; sourceTree = "<group>"; };
+		D936C09A1DEEA6C4009DFBF8 /* UIAlertView+Block.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+Block.h"; sourceTree = "<group>"; };
+		D936C09B1DEEA6C4009DFBF8 /* UIAlertView+Block.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+Block.m"; sourceTree = "<group>"; };
+		D95AF9D31DE2DDB100D6E93C /* WXLC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WXLC.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95AF9D61DE2DDB100D6E93C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D95AF9DB1DE2DDB100D6E93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D95AF9DD1DE2DDB100D6E93C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D95AF9E01DE2DDB100D6E93C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D95AF9E21DE2DDB100D6E93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95AF9E71DE2DDB100D6E93C /* WXLCTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXLCTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95AF9EB1DE2DDB100D6E93C /* WXLCTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXLCTests.swift; sourceTree = "<group>"; };
+		D95AF9ED1DE2DDB100D6E93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95AF9F21DE2DDB100D6E93C /* WXLCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WXLCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D95AF9F61DE2DDB100D6E93C /* WXLCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXLCUITests.swift; sourceTree = "<group>"; };
+		D95AF9F81DE2DDB100D6E93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXHomeViewController.swift; sourceTree = "<group>"; };
+		D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon_mine_bg.jpg; sourceTree = "<group>"; };
+		D95AFA0A1DE2F55400D6E93C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXAccountTableViewCell.swift; sourceTree = "<group>"; };
+		D95AFA0D1DE5459800D6E93C /* WXAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXAccountTableViewCell.xib; sourceTree = "<group>"; };
+		D95AFA101DE54D3A00D6E93C /* AddAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddAccountViewController.swift; sourceTree = "<group>"; };
+		D95AFA111DE54D3A00D6E93C /* AddAccountViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddAccountViewController.xib; sourceTree = "<group>"; };
+		D95AFA141DE5533000D6E93C /* AccountDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDetailViewController.swift; sourceTree = "<group>"; };
+		D95AFA151DE5533000D6E93C /* AccountDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountDetailViewController.xib; sourceTree = "<group>"; };
+		D95AFA181DE58D4A00D6E93C /* AddStockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddStockViewController.swift; sourceTree = "<group>"; };
+		D95AFA191DE58D4A00D6E93C /* AddStockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddStockViewController.xib; sourceTree = "<group>"; };
+		D95AFA1C1DE593E800D6E93C /* AccountInfoTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountInfoTableViewCell.swift; sourceTree = "<group>"; };
+		D95AFA1D1DE593E800D6E93C /* AccountInfoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccountInfoTableViewCell.xib; sourceTree = "<group>"; };
+		D96283631DE7E13C005CFD0A /* WXStockManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXStockManager.swift; sourceTree = "<group>"; };
+		D96283651DE7E186005CFD0A /* StockAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockAccount.swift; sourceTree = "<group>"; };
+		D96283671DE7E202005CFD0A /* StockDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetail.swift; sourceTree = "<group>"; };
+		D977362F1DEBE0E3003458AA /* StockDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		D97736301DEBE0E3003458AA /* StockDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockDetailViewController.xib; sourceTree = "<group>"; };
+		D9D4125B1DE83EBC0008E77A /* StockListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StockListTableViewCell.swift; sourceTree = "<group>"; };
+		D9D4125C1DE83EBC0008E77A /* StockListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StockListTableViewCell.xib; sourceTree = "<group>"; };
+		FDBDBFCEEDEDD76C9780D928 /* libPods-WXLC.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WXLC.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D95AF9D01DE2DDB100D6E93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11C20983CEB0017013EB81B5 /* libPods-WXLC.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9E41DE2DDB100D6E93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9EF1DE2DDB100D6E93C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1589DC393584D7FB85F0D092 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				447BD9C5FB9B33A67D3BCD1A /* Pods-WXLC.debug.xcconfig */,
+				D31CD542D4F7E0D1C6801F80 /* Pods-WXLC.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		19600FA0A5A45D13CEBEE2F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FDBDBFCEEDEDD76C9780D928 /* libPods-WXLC.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D936C08D1DEC1BAD009DFBF8 /* NetworkingAPI */ = {
+			isa = PBXGroup;
+			children = (
+				D936C08E1DEC1BAD009DFBF8 /* NetworkingConstants.h */,
+				D936C08F1DEC1BAD009DFBF8 /* WXNetworkingAPI.h */,
+				D936C0901DEC1BAD009DFBF8 /* WXNetworkingAPI.m */,
+			);
+			path = NetworkingAPI;
+			sourceTree = "<group>";
+		};
+		D95AF9CA1DE2DDB100D6E93C = {
+			isa = PBXGroup;
+			children = (
+				D95AF9D51DE2DDB100D6E93C /* WXLC */,
+				D95AF9EA1DE2DDB100D6E93C /* WXLCTests */,
+				D95AF9F51DE2DDB100D6E93C /* WXLCUITests */,
+				D95AF9D41DE2DDB100D6E93C /* Products */,
+				1589DC393584D7FB85F0D092 /* Pods */,
+				19600FA0A5A45D13CEBEE2F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D95AF9D41DE2DDB100D6E93C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D95AF9D31DE2DDB100D6E93C /* WXLC.app */,
+				D95AF9E71DE2DDB100D6E93C /* WXLCTests.xctest */,
+				D95AF9F21DE2DDB100D6E93C /* WXLCUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D95AF9D51DE2DDB100D6E93C /* WXLC */ = {
+			isa = PBXGroup;
+			children = (
+				D936C09A1DEEA6C4009DFBF8 /* UIAlertView+Block.h */,
+				D936C09B1DEEA6C4009DFBF8 /* UIAlertView+Block.m */,
+				D936C08D1DEC1BAD009DFBF8 /* NetworkingAPI */,
+				D95AFA0A1DE2F55400D6E93C /* Constant.swift */,
+				D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */,
+				D95AF9D61DE2DDB100D6E93C /* AppDelegate.swift */,
+				D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */,
+				D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */,
+				D95AFA0D1DE5459800D6E93C /* WXAccountTableViewCell.xib */,
+				D95AF9DA1DE2DDB100D6E93C /* Main.storyboard */,
+				D95AF9DD1DE2DDB100D6E93C /* Assets.xcassets */,
+				D95AF9DF1DE2DDB100D6E93C /* LaunchScreen.storyboard */,
+				D95AF9E21DE2DDB100D6E93C /* Info.plist */,
+				D95AFA101DE54D3A00D6E93C /* AddAccountViewController.swift */,
+				D95AFA111DE54D3A00D6E93C /* AddAccountViewController.xib */,
+				D95AFA141DE5533000D6E93C /* AccountDetailViewController.swift */,
+				D95AFA151DE5533000D6E93C /* AccountDetailViewController.xib */,
+				D95AFA1C1DE593E800D6E93C /* AccountInfoTableViewCell.swift */,
+				D95AFA1D1DE593E800D6E93C /* AccountInfoTableViewCell.xib */,
+				D95AFA181DE58D4A00D6E93C /* AddStockViewController.swift */,
+				D95AFA191DE58D4A00D6E93C /* AddStockViewController.xib */,
+				D9027CCB1DE6D1B30011E1E8 /* WXLC-Bridging-Header.h */,
+				D9D4125B1DE83EBC0008E77A /* StockListTableViewCell.swift */,
+				D9D4125C1DE83EBC0008E77A /* StockListTableViewCell.xib */,
+				D96283631DE7E13C005CFD0A /* WXStockManager.swift */,
+				D977362F1DEBE0E3003458AA /* StockDetailViewController.swift */,
+				D97736301DEBE0E3003458AA /* StockDetailViewController.xib */,
+				D936C0921DEC2A55009DFBF8 /* StockInfoTableViewCell.swift */,
+				D936C0931DEC2A55009DFBF8 /* StockInfoTableViewCell.xib */,
+				D936C0961DEC2F2C009DFBF8 /* StockActionTableViewCell.swift */,
+				D936C0971DEC2F2C009DFBF8 /* StockActionTableViewCell.xib */,
+				D96283651DE7E186005CFD0A /* StockAccount.swift */,
+				D96283671DE7E202005CFD0A /* StockDetail.swift */,
+			);
+			path = WXLC;
+			sourceTree = "<group>";
+		};
+		D95AF9EA1DE2DDB100D6E93C /* WXLCTests */ = {
+			isa = PBXGroup;
+			children = (
+				D95AF9EB1DE2DDB100D6E93C /* WXLCTests.swift */,
+				D95AF9ED1DE2DDB100D6E93C /* Info.plist */,
+			);
+			path = WXLCTests;
+			sourceTree = "<group>";
+		};
+		D95AF9F51DE2DDB100D6E93C /* WXLCUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D95AF9F61DE2DDB100D6E93C /* WXLCUITests.swift */,
+				D95AF9F81DE2DDB100D6E93C /* Info.plist */,
+			);
+			path = WXLCUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D95AF9D21DE2DDB100D6E93C /* WXLC */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95AF9FB1DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLC" */;
+			buildPhases = (
+				67C8AEAB207127CD33610E7B /* [CP] Check Pods Manifest.lock */,
+				D95AF9CF1DE2DDB100D6E93C /* Sources */,
+				D95AF9D01DE2DDB100D6E93C /* Frameworks */,
+				D95AF9D11DE2DDB100D6E93C /* Resources */,
+				F176C47B4697144AFD9921C0 /* [CP] Embed Pods Frameworks */,
+				6F1C7B247A0FC67B46EF9C87 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WXLC;
+			productName = WXLC;
+			productReference = D95AF9D31DE2DDB100D6E93C /* WXLC.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D95AF9E61DE2DDB100D6E93C /* WXLCTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95AF9FE1DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLCTests" */;
+			buildPhases = (
+				D95AF9E31DE2DDB100D6E93C /* Sources */,
+				D95AF9E41DE2DDB100D6E93C /* Frameworks */,
+				D95AF9E51DE2DDB100D6E93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95AF9E91DE2DDB100D6E93C /* PBXTargetDependency */,
+			);
+			name = WXLCTests;
+			productName = WXLCTests;
+			productReference = D95AF9E71DE2DDB100D6E93C /* WXLCTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D95AF9F11DE2DDB100D6E93C /* WXLCUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D95AFA011DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLCUITests" */;
+			buildPhases = (
+				D95AF9EE1DE2DDB100D6E93C /* Sources */,
+				D95AF9EF1DE2DDB100D6E93C /* Frameworks */,
+				D95AF9F01DE2DDB100D6E93C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D95AF9F41DE2DDB100D6E93C /* PBXTargetDependency */,
+			);
+			name = WXLCUITests;
+			productName = WXLCUITests;
+			productReference = D95AF9F21DE2DDB100D6E93C /* WXLCUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D95AF9CB1DE2DDB100D6E93C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = com.wxjr;
+				TargetAttributes = {
+					D95AF9D21DE2DDB100D6E93C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = H2HS6M68K6;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+					D95AF9E61DE2DDB100D6E93C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = JPKK8X66H9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D95AF9D21DE2DDB100D6E93C;
+					};
+					D95AF9F11DE2DDB100D6E93C = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = JPKK8X66H9;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D95AF9D21DE2DDB100D6E93C;
+					};
+				};
+			};
+			buildConfigurationList = D95AF9CE1DE2DDB100D6E93C /* Build configuration list for PBXProject "WXLC" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D95AF9CA1DE2DDB100D6E93C;
+			productRefGroup = D95AF9D41DE2DDB100D6E93C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D95AF9D21DE2DDB100D6E93C /* WXLC */,
+				D95AF9E61DE2DDB100D6E93C /* WXLCTests */,
+				D95AF9F11DE2DDB100D6E93C /* WXLCUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D95AF9D11DE2DDB100D6E93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95AF9E11DE2DDB100D6E93C /* LaunchScreen.storyboard in Resources */,
+				D97736321DEBE0E3003458AA /* StockDetailViewController.xib in Resources */,
+				D95AFA171DE5533000D6E93C /* AccountDetailViewController.xib in Resources */,
+				D95AFA0F1DE5459800D6E93C /* WXAccountTableViewCell.xib in Resources */,
+				D936C0991DEC2F2C009DFBF8 /* StockActionTableViewCell.xib in Resources */,
+				D95AF9DE1DE2DDB100D6E93C /* Assets.xcassets in Resources */,
+				D9D4125E1DE83EBC0008E77A /* StockListTableViewCell.xib in Resources */,
+				D95AFA071DE2F2D100D6E93C /* icon_mine_bg.jpg in Resources */,
+				D95AFA1F1DE593E800D6E93C /* AccountInfoTableViewCell.xib in Resources */,
+				D95AFA131DE54D3A00D6E93C /* AddAccountViewController.xib in Resources */,
+				D95AF9DC1DE2DDB100D6E93C /* Main.storyboard in Resources */,
+				D936C0951DEC2A55009DFBF8 /* StockInfoTableViewCell.xib in Resources */,
+				D95AFA1B1DE58D4A00D6E93C /* AddStockViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9E51DE2DDB100D6E93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9F01DE2DDB100D6E93C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67C8AEAB207127CD33610E7B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6F1C7B247A0FC67B46EF9C87 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXLC/Pods-WXLC-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F176C47B4697144AFD9921C0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WXLC/Pods-WXLC-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D95AF9CF1DE2DDB100D6E93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D96283661DE7E186005CFD0A /* StockAccount.swift in Sources */,
+				D936C09C1DEEA6C4009DFBF8 /* UIAlertView+Block.m in Sources */,
+				D95AFA051DE2E43300D6E93C /* WXHomeViewController.swift in Sources */,
+				D95AFA1A1DE58D4A00D6E93C /* AddStockViewController.swift in Sources */,
+				D936C0911DEC1BAD009DFBF8 /* WXNetworkingAPI.m in Sources */,
+				D96283681DE7E202005CFD0A /* StockDetail.swift in Sources */,
+				D936C0941DEC2A55009DFBF8 /* StockInfoTableViewCell.swift in Sources */,
+				D96283641DE7E13C005CFD0A /* WXStockManager.swift in Sources */,
+				D95AF9D71DE2DDB100D6E93C /* AppDelegate.swift in Sources */,
+				D9D4125D1DE83EBC0008E77A /* StockListTableViewCell.swift in Sources */,
+				D95AFA121DE54D3A00D6E93C /* AddAccountViewController.swift in Sources */,
+				D95AFA161DE5533000D6E93C /* AccountDetailViewController.swift in Sources */,
+				D95AFA1E1DE593E800D6E93C /* AccountInfoTableViewCell.swift in Sources */,
+				D95AFA0E1DE5459800D6E93C /* WXAccountTableViewCell.swift in Sources */,
+				D95AFA0B1DE2F55400D6E93C /* Constant.swift in Sources */,
+				D936C0981DEC2F2C009DFBF8 /* StockActionTableViewCell.swift in Sources */,
+				D97736311DEBE0E3003458AA /* StockDetailViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9E31DE2DDB100D6E93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95AF9EC1DE2DDB100D6E93C /* WXLCTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D95AF9EE1DE2DDB100D6E93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D95AF9F71DE2DDB100D6E93C /* WXLCUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D95AF9E91DE2DDB100D6E93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95AF9D21DE2DDB100D6E93C /* WXLC */;
+			targetProxy = D95AF9E81DE2DDB100D6E93C /* PBXContainerItemProxy */;
+		};
+		D95AF9F41DE2DDB100D6E93C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D95AF9D21DE2DDB100D6E93C /* WXLC */;
+			targetProxy = D95AF9F31DE2DDB100D6E93C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D95AF9DA1DE2DDB100D6E93C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95AF9DB1DE2DDB100D6E93C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D95AF9DF1DE2DDB100D6E93C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D95AF9E01DE2DDB100D6E93C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D95AF9F91DE2DDB100D6E93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D95AF9FA1DE2DDB100D6E93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D95AF9FC1DE2DDB100D6E93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 447BD9C5FB9B33A67D3BCD1A /* Pods-WXLC.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H2HS6M68K6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WXLC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wx.WXLC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WXLC/WXLC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D95AF9FD1DE2DDB100D6E93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D31CD542D4F7E0D1C6801F80 /* Pods-WXLC.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = H2HS6M68K6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = WXLC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.wx.WXLC;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WXLC/WXLC-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D95AF9FF1DE2DDB100D6E93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JPKK8X66H9;
+				INFOPLIST_FILE = WXLCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lps.wxlc.WXLCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WXLC.app/WXLC";
+			};
+			name = Debug;
+		};
+		D95AFA001DE2DDB100D6E93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = JPKK8X66H9;
+				INFOPLIST_FILE = WXLCTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lps.wxlc.WXLCTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WXLC.app/WXLC";
+			};
+			name = Release;
+		};
+		D95AFA021DE2DDB100D6E93C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JPKK8X66H9;
+				INFOPLIST_FILE = WXLCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lps.wxlc.WXLCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WXLC;
+			};
+			name = Debug;
+		};
+		D95AFA031DE2DDB100D6E93C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = JPKK8X66H9;
+				INFOPLIST_FILE = WXLCUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lps.wxlc.WXLCUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = WXLC;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D95AF9CE1DE2DDB100D6E93C /* Build configuration list for PBXProject "WXLC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95AF9F91DE2DDB100D6E93C /* Debug */,
+				D95AF9FA1DE2DDB100D6E93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95AF9FB1DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLC" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95AF9FC1DE2DDB100D6E93C /* Debug */,
+				D95AF9FD1DE2DDB100D6E93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95AF9FE1DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLCTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95AF9FF1DE2DDB100D6E93C /* Debug */,
+				D95AFA001DE2DDB100D6E93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D95AFA011DE2DDB100D6E93C /* Build configuration list for PBXNativeTarget "WXLCUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D95AFA021DE2DDB100D6E93C /* Debug */,
+				D95AFA031DE2DDB100D6E93C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D95AF9CB1DE2DDB100D6E93C /* Project object */;
+}
