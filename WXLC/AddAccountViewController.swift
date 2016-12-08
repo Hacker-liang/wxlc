@@ -64,7 +64,6 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
             } else {
                 SVProgressHUD.showError(withStatus: "添加失败")
             }
-            
         })
     }
     
@@ -74,7 +73,6 @@ class AddAccountViewController: UIViewController, UITextFieldDelegate {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
