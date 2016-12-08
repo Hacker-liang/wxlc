@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		11C20983CEB0017013EB81B5 /* libPods-WXLC.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FDBDBFCEEDEDD76C9780D928 /* libPods-WXLC.a */; };
+		D9339EEB1DF6C0E8005B40C9 /* icon_home_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = D9339EEA1DF6C0E8005B40C9 /* icon_home_bg.png */; };
 		D936C0911DEC1BAD009DFBF8 /* WXNetworkingAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = D936C0901DEC1BAD009DFBF8 /* WXNetworkingAPI.m */; };
 		D936C0941DEC2A55009DFBF8 /* StockInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D936C0921DEC2A55009DFBF8 /* StockInfoTableViewCell.swift */; };
 		D936C0951DEC2A55009DFBF8 /* StockInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D936C0931DEC2A55009DFBF8 /* StockInfoTableViewCell.xib */; };
@@ -21,7 +22,6 @@
 		D95AF9EC1DE2DDB100D6E93C /* WXLCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF9EB1DE2DDB100D6E93C /* WXLCTests.swift */; };
 		D95AF9F71DE2DDB100D6E93C /* WXLCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AF9F61DE2DDB100D6E93C /* WXLCUITests.swift */; };
 		D95AFA051DE2E43300D6E93C /* WXHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */; };
-		D95AFA071DE2F2D100D6E93C /* icon_mine_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */; };
 		D95AFA0B1DE2F55400D6E93C /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA0A1DE2F55400D6E93C /* Constant.swift */; };
 		D95AFA0E1DE5459800D6E93C /* WXAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */; };
 		D95AFA0F1DE5459800D6E93C /* WXAccountTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D95AFA0D1DE5459800D6E93C /* WXAccountTableViewCell.xib */; };
@@ -63,6 +63,7 @@
 		447BD9C5FB9B33A67D3BCD1A /* Pods-WXLC.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXLC.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WXLC/Pods-WXLC.debug.xcconfig"; sourceTree = "<group>"; };
 		D31CD542D4F7E0D1C6801F80 /* Pods-WXLC.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WXLC.release.xcconfig"; path = "Pods/Target Support Files/Pods-WXLC/Pods-WXLC.release.xcconfig"; sourceTree = "<group>"; };
 		D9027CCB1DE6D1B30011E1E8 /* WXLC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WXLC-Bridging-Header.h"; sourceTree = "<group>"; };
+		D9339EEA1DF6C0E8005B40C9 /* icon_home_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_home_bg.png; sourceTree = "<group>"; };
 		D936C08E1DEC1BAD009DFBF8 /* NetworkingConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkingConstants.h; sourceTree = "<group>"; };
 		D936C08F1DEC1BAD009DFBF8 /* WXNetworkingAPI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXNetworkingAPI.h; sourceTree = "<group>"; };
 		D936C0901DEC1BAD009DFBF8 /* WXNetworkingAPI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WXNetworkingAPI.m; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		D95AF9F61DE2DDB100D6E93C /* WXLCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WXLCUITests.swift; sourceTree = "<group>"; };
 		D95AF9F81DE2DDB100D6E93C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXHomeViewController.swift; sourceTree = "<group>"; };
-		D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon_mine_bg.jpg; sourceTree = "<group>"; };
 		D95AFA0A1DE2F55400D6E93C /* Constant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WXAccountTableViewCell.swift; sourceTree = "<group>"; };
 		D95AFA0D1DE5459800D6E93C /* WXAccountTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WXAccountTableViewCell.xib; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 				D936C09B1DEEA6C4009DFBF8 /* UIAlertView+Block.m */,
 				D936C08D1DEC1BAD009DFBF8 /* NetworkingAPI */,
 				D95AFA0A1DE2F55400D6E93C /* Constant.swift */,
-				D95AFA061DE2F2D100D6E93C /* icon_mine_bg.jpg */,
+				D9339EEA1DF6C0E8005B40C9 /* icon_home_bg.png */,
 				D95AF9D61DE2DDB100D6E93C /* AppDelegate.swift */,
 				D95AFA041DE2E43300D6E93C /* WXHomeViewController.swift */,
 				D95AFA0C1DE5459800D6E93C /* WXAccountTableViewCell.swift */,
@@ -361,7 +361,7 @@
 				D936C0991DEC2F2C009DFBF8 /* StockActionTableViewCell.xib in Resources */,
 				D95AF9DE1DE2DDB100D6E93C /* Assets.xcassets in Resources */,
 				D9D4125E1DE83EBC0008E77A /* StockListTableViewCell.xib in Resources */,
-				D95AFA071DE2F2D100D6E93C /* icon_mine_bg.jpg in Resources */,
+				D9339EEB1DF6C0E8005B40C9 /* icon_home_bg.png in Resources */,
 				D95AFA1F1DE593E800D6E93C /* AccountInfoTableViewCell.xib in Resources */,
 				D95AFA131DE54D3A00D6E93C /* AddAccountViewController.xib in Resources */,
 				D95AF9DC1DE2DDB100D6E93C /* Main.storyboard in Resources */,

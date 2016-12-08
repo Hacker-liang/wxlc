@@ -42,25 +42,6 @@ class StockDetail: NSObject {
         return count
     }
     
-    func stockAveragePrice() -> Double {
-        var count = 0
-        var totalPrice = 0.0
-        for action in self.actionList {
-            if action.actionType == 0 {
-                count += action.count
-                totalPrice += Double(action.count) * action.price
-            } else if action.actionType == 1 {
-                count -= action.count
-                totalPrice -= Double(action.count) * action.price
-            }
-        }
-        if count == 0 {
-            return 0.0
-        }
-        return totalPrice/Double(count)
-        
-    }
-    
     func stockTotalFee() -> Double {
         var totalPrice = 0.0
         for action in self.actionList {
@@ -80,7 +61,6 @@ class StockDetail: NSObject {
 
         var count = 0
         for action in self.actionList {
-
             if action.actionType == 0 {
                 count += action.count
                 totalPrice -= Double(action.count) * action.price

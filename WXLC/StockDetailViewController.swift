@@ -202,12 +202,12 @@ class StockDetailViewController: UIViewController, UITableViewDataSource, UITabl
                 cell.titleLabel.text = "盈亏:"
                 
                 let profitValue = self.stockDetail.getTotalProfit()
-                cell.contentLabel.text = "\(profitValue)"
+                cell.contentLabel.text = String(format: "%.2f", profitValue)
 
                 if profitValue > 0 {
                     cell.contentLabel.textColor = UIColor.red
                 } else {
-                    cell.contentLabel.textColor  = APP_THEME_COLOR
+                    cell.contentLabel.textColor  = APP_GREEN_COLOR
                 }
             }
             if indexPath.row == 1 {
@@ -227,13 +227,13 @@ class StockDetailViewController: UIViewController, UITableViewDataSource, UITabl
                 cell.actionLabel.text = "买入"
                 cell.priceLabel.text = "\(priceUnit)\(action.price!)"
                 cell.countLabel.text = "\(action.count!)股"
-                cell.priceLabel.textColor = UIColor.red
+                cell.priceLabel.textColor = APP_GREEN_COLOR
 
             } else if action.actionType == 1 {
                 cell.actionLabel.text = "卖出"
                 cell.priceLabel.text = "\(priceUnit)\(action.price!)"
                 cell.countLabel.text = "\(action.count!)股"
-                cell.priceLabel.textColor = APP_THEME_COLOR
+                cell.priceLabel.textColor = UIColor.red
 
             } else if action.actionType == 2 {
                 cell.actionLabel.text = "其它"
@@ -243,9 +243,8 @@ class StockDetailViewController: UIViewController, UITableViewDataSource, UITabl
                 if action.price! > 0 {
                     cell.priceLabel.textColor = UIColor.red
                 } else {
-                    cell.priceLabel.textColor = APP_THEME_COLOR
+                    cell.priceLabel.textColor = APP_GREEN_COLOR
                 }
-
             }
             return cell
         }

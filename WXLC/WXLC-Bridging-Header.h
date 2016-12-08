@@ -7,3 +7,4 @@
 #import "AFNetworking.h"
 #import "WXNetworkingAPI.h"
 #import "UIAlertView+Block.h"
+#import "MJRefresh.h"

@@ -8,7 +8,9 @@
 
 import UIKit
 
-let APP_THEME_COLOR: UIColor           = UIColorFromRGB(rgb: 0x00c284, alpha:1)
+let APP_THEME_COLOR: UIColor            = UIColorFromRGB(rgb: 0xF04F46, alpha:1)
+let APP_GREEN_COLOR: UIColor            = UIColorFromRGB(rgb: 0x00c284, alpha:1)
+
 let APP_PAGE_COLOR: UIColor             = UIColorFromRGB(rgb: 0xfafafa, alpha:1)
 
 let COLOR_LINE: UIColor                 = UIColorFromRGB(rgb: 0xe2e2e2, alpha:1)

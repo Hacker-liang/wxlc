@@ -83,8 +83,8 @@ class AccountDetailViewController: UIViewController, UITableViewDelegate, UITabl
     }
     
     func setupFooterView() {
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: kWindowWidth, height: 80))
-        let addButton = UIButton(frame: CGRect(x: 10, y: 40, width: kWindowWidth-20, height: 45))
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: kWindowWidth, height: 100))
+        let addButton = UIButton(frame: CGRect(x: 10, y: 30, width: kWindowWidth-20, height: 45))
         addButton.backgroundColor = APP_THEME_COLOR
         addButton.layer.cornerRadius = 3.0
         addButton.clipsToBounds = true
@@ -186,15 +186,12 @@ class AccountDetailViewController: UIViewController, UITableViewDelegate, UITabl
             if indexPath.row == 0 {
                 var totalValue = 0.0
                 for stock in self.dataSource {
-                    if stock.stockCount() > 0 {
-                        let profitValue = (stock.currentPrice - stock.stockAveragePrice()) * Double(stock.stockCount())
-                        totalValue += profitValue
-                    }
+                    totalValue += stock.getTotalProfit()
                 }
                 if totalValue > 0 {
                     cell.amoutLabel.textColor = UIColor.red
                 } else {
-                    cell.amoutLabel.textColor = APP_THEME_COLOR
+                    cell.amoutLabel.textColor = APP_GREEN_COLOR
                 }
                 cell.typeLabel.text = "盈亏:"
                 let value1 = String(format: "%.2f", totalValue)
@@ -205,11 +202,11 @@ class AccountDetailViewController: UIViewController, UITableViewDelegate, UITabl
                 var totalValue = 0.0
                 for stock in self.dataSource {
                     if stock.stockCount() > 0 {
-                        let profitValue = stock.stockAveragePrice() * Double(stock.stockCount())
+                        let profitValue = stock.currentPrice * Double(stock.stockCount())
                         totalValue += profitValue
                     }
                 }
-                cell.typeLabel.text = "总投入:"
+                cell.typeLabel.text = "在投总值:"
                 cell.amoutLabel.text = "\(priceUnit)\(totalValue)"
             }
         
@@ -225,17 +222,14 @@ class AccountDetailViewController: UIViewController, UITableViewDelegate, UITabl
         let cell:StockListTableViewCell  = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath) as! StockListTableViewCell
         cell.titleLable.text = "\(dataSource[indexPath.row].name!)(\(dataSource[indexPath.row].number!))"
         let stockDetail = dataSource[indexPath.row]
-        let profitValue = stockDetail.currentPrice - stockDetail.stockAveragePrice()
-        let value1 = String(format: "%.2f", profitValue * Double(stockDetail.stockCount()) + stockDetail.stockTotalFee())
-//        let value2 = String(format: "%.2f", profitValue/stockDetail.stockAveragePrice() * 100.0)
+        let profitValue = stockDetail.getTotalProfit()
+        cell.pfofitLabel.text = String(format: "%.2f", profitValue)
+        
         if profitValue > 0 {
             cell.pfofitLabel.textColor = UIColor.red
-            cell.pfofitLabel.text = "+ \(value1)"
         } else {
-            cell.pfofitLabel.textColor = APP_THEME_COLOR
-            cell.pfofitLabel.text = "\(value1)"
+            cell.pfofitLabel.textColor  = APP_GREEN_COLOR
         }
-
         return cell
     }
     

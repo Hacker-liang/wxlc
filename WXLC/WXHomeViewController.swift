@@ -21,7 +21,6 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
     var navigationView: UIView!
     var userId: String!
     
-    let iconDatasource = [["icon_minehome_invest", "icon_minehome_moneyrecord", "icon_minehome_account", "icon_minehome_bank", "icon_minehome_lottery"], ["icon_minehome_setting"]]
     var dataSource: [StockAccount] = []
     
     override func viewDidLoad() {
@@ -30,7 +29,7 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
         self.view.backgroundColor = UIColor.white
         
         let bgView = UIImageView(frame:CGRect(x: 0, y: 0, width: self.view.bounds.size.width, height: 235))
-        bgView.image = UIImage(named: "icon_mine_bg.jpg")
+        bgView.image = UIImage(named: "icon_home_bg.png")
         bgView.contentMode = .scaleAspectFill
         bgView.clipsToBounds = true
         self.view.addSubview(bgView)
@@ -55,6 +54,11 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
         self.navigationItem.title = "首页"
         self.view.addSubview(navigationView)
         navigationView.alpha = 0
+        self.loadUserAccount()
+        
+        self.tableView.mj_header = MJRefreshNormalHeader(refreshingBlock: {
+            self.loadUserAccount()
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -64,7 +68,6 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: true)
-        self.loadUserAccount()
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -72,9 +75,7 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewWillDisappear(animated)
     }
     
-    
     func loadMoneyInfo() {
-        
         let url = "http://op.juhe.cn/onebox/exchange/query"
         WXNetworkingAPI.get(url, params: ["key": "47e27ba2819ff652257eb855159ffe6e"]) { (responseObject, error) in
             if let dic = responseObject as? NSDictionary {
@@ -127,22 +128,23 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
                         i += 1
                     }
                     for stock in stockList! {
+                        
                         WXStockManager.updateStockInstantInfo(stockInfo: stock, completionBlock: { (isSuccess) in
                             if isSuccess {
                                 
                             }
                             count += 1
                             
-                            let profitValue = (stock.currentPrice - stock.stockAveragePrice()) * Double(stock.stockCount())
+                            let profitValue = stock.getTotalProfit()
                             if stock.type == 1 {
                                 allValue += profitValue * self.hkd2rmb
-                                allInvest += stock.stockAveragePrice() * Double(stock.stockCount()) * self.hkd2rmb
+                                allInvest += stock.currentPrice * Double(stock.stockCount()) * self.hkd2rmb
                             } else if stock.type == 2 {
                                 allValue += profitValue * self.doller2rmb
-                                allInvest += stock.stockAveragePrice() * Double(stock.stockCount()) * self.doller2rmb
+                                allInvest += stock.currentPrice * Double(stock.stockCount()) * self.doller2rmb
                             } else {
                                 allValue += profitValue
-                                allInvest += stock.stockAveragePrice() * Double(stock.stockCount())
+                                allInvest += stock.currentPrice * Double(stock.stockCount())
                             }
                             
                             if count == stockList!.count {
@@ -154,6 +156,7 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
                                     self.totalIncomeLabel.text = "¥\(str)"
                                     self.totalInvestLabel.text = "¥\(str1)"
                                     self.tableView.reloadData()
+                                    self.tableView.mj_header.endRefreshing()
                                     
                                 }
                                 
@@ -189,7 +192,7 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
         let tempLabel2 = UILabel(frame: CGRect(x: 20, y: 145, width: self.view.bounds.size.width/3, height: 20))
         tempLabel2.textColor = UIColor.white
         tempLabel2.font = UIFont.systemFont(ofSize: 13.0)
-        tempLabel2.text = "总投入"
+        tempLabel2.text = "在投总值"
         tempLabel2.textAlignment = .center
         headerView.addSubview(tempLabel2)
         
@@ -287,15 +290,12 @@ class WXHomeViewController: UIViewController, UITableViewDataSource, UITableView
         
         var totalValue = 0.0
         for stock in self.dataSource[indexPath.row].stockList {
-            if stock.stockCount() > 0 {
-                let profitValue = (stock.currentPrice - stock.stockAveragePrice()) * Double(stock.stockCount())
-                totalValue += profitValue
-            }
+            totalValue += stock.getTotalProfit()
         }
         if totalValue > 0 {
             cell.amountLable.textColor = UIColor.red
         } else {
-            cell.amountLable.textColor = APP_THEME_COLOR
+            cell.amountLable.textColor = APP_GREEN_COLOR
         }
         let value1 = String(format: "%.2f", totalValue)
         

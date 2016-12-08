@@ -114,6 +114,8 @@ class WXStockManager: NSObject {
             url = "http://web.juhe.cn:8080/finance/stock/usa"
             param.setObject(stockInfo.number, forKey: "gid" as NSCopying)
         }
+        
+        Thread.sleep(forTimeInterval: 0.1)
 
         WXNetworkingAPI.get(url, params: param) { (responseObject, error) in
             if let dic = responseObject as? NSDictionary {

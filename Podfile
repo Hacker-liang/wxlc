@@ -3,4 +3,5 @@ target 'WXLC' do
     pod 'SVProgressHUD'
     pod 'MJRefresh'
     pod 'AFNetworking'
+    pod 'MJRefresh'
 end
