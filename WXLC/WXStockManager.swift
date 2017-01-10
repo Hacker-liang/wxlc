@@ -179,9 +179,7 @@ class WXStockManager: NSObject {
                 
             } else {
                 completionBlock(false, [])
-                
             }
-            
         }
     }
     
